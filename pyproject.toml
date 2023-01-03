@@ -42,7 +42,8 @@ dev = [
  	"setuptools_scm",
 ]
 
-
+[project.scripts]
+org_stats = "org_stats.main:run"
 
 [build-system]
 requires = [
