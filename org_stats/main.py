@@ -8,7 +8,12 @@ def main(organisation: str, github_token: str):
     pypi_monthly_downloads = pypi_stats.run(repos)
     pepy_overall_downloads = pepy_stats.run(repos)
 
-    print(stars, contributors, pypi_monthly_downloads, pepy_overall_downloads)
+    print(
+        f"Total stars: {stars}, "
+        f"Total contributors: {contributors}, "
+        f"Monthly downloads: {pypi_monthly_downloads}, "
+        f"Total downloads: {pepy_overall_downloads}"
+    )
 
 
 def run():
